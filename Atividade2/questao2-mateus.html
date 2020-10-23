@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao2</title>
+</head>
+<body>
+    <script>
+        let poli = Number(window.prompt("Qual a taxa de poluicao"))
+        
+        function verificar(taxa){
+            if (taxa<=0.25){
+                console.log('o indice de poluicao eh aceitavel')
+                alert("o indice de poluicao eh aceitavel")
+            }
+            else if (taxa<0.3){
+                console.log('o indice de poluicao nao eh aceitavel, mas tudo continua funcionando')
+                alert("o indice de poluicao nao eh aceitavel, mas tudo continua funcionando")
+            }
+            else if ( taxa<0.4){
+                console.log('o indice de poluicao nao eh aceitavel, as industrias do 1° grupo sao intimadas, teram que suspenderem suas atividades  ')
+                alert("o indice de poluicao nao eh aceitavel, as industrias do 1° grupo sao intimadas, teram que suspenderem suas atividades ")
+            }
+            else if (taxa<0.5){
+                console.log('o indice de poluicao nao eh aceitavel, as industrias do 1° e 2° grupos sao intimadas, teram que suspenderem suas atividades  ')
+                alert("o indice de poluicao nao eh aceitavel, as industrias do 1° e 2° grupos sao intimadas, teram que suspenderem suas atividades  ")
+            }
+            else {
+                (console.log('o indice de poluicao nao eh aceitavel, as industrias do 1°,2° e 3° grupos sao intimadas, teram que suspenderem suas atividades  '))
+                alert("o indice de poluicao nao eh aceitavel, as industrias do 1°,2° e 3° grupos sao intimadas, teram que suspenderem suas atividades")
+            }
+        }
+
+        verificar(poli)
+    </script>
+    
+</body>
+</html>

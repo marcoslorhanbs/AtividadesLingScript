@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao 9</title>
+</head>
+<body>
+    
+   
+
+<script>
+ 
+
+    var frutas = ["banana","laranja", "limao" ];
+
+    console.log(frutas)
+
+    let banana = frutas.shift();
+    let laranja = frutas.shift();
+
+    frutas.unshift(banana);
+
+    console.log(frutas);
+
+    var afruta = frutas.splice(1,1);
+
+    frutas.push("uva");
+
+    console.log(frutas);
+
+    let imprimir = function (elemento, indice, arr){
+        console.log(elemento)
+        console.log(indice) 
+        console.log(arr)  
+    }
+    
+    frutas.forEach(imprimir)
+
+
+ </script>
+    
+</body>
+</html>
